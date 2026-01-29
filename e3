@@ -1,0 +1,16 @@
+make folder git_demo
+open folder in git bash 
+git init
+ls -a
+open folder -> new doc-> main.py-> print("hello")
+git add .
+git commit -m " "
+git log --oneline
+github -> repo-> git-lab-demo->copy url
+git remote add origin url.git
+git push -u origin main
+cd ~/desktop
+git clone url.git
+cd git-lab-demo
+ls
+git remote -v
