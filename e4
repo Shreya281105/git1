@@ -1,0 +1,39 @@
+Click New Repository->Git_PullRequests
+add readme file
+open gitbash
+cd ~/Desktop
+git clone https://github.com/YourUsername/Git_PullRequests.git
+make folder
+cd Git_PullRequests
+git status
+git branch
+touch file1.txt
+echo "This file is created in master branch" > file1.txt
+git status
+git add file1.txt
+git commit -m "Initial commit in master"
+git push origin main
+git branch feature-1
+git checkout feature-1
+git branch
+echo "This change is from feature-1 branch" >> file1.txt
+touch feature.txt
+echo "Feature branch file" > feature.txt
+git status
+git add .
+git commit -m "Changes done in feature-1"
+git push origin feature-1
+open repo 
+Click Compare & Pull Request Base branch → main/master
+Add title:
+Added feature-1 changes
+Add description
+Click Create Pull Request
+✅ Pull Request is created.
+Compare branch → feature-1
+click merge  and confirm
+git checkout main
+git pull origin main
+git log --oneline
+git branch -d feature-1
+git push origin --delete feature-1
