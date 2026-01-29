@@ -1,0 +1,31 @@
+create a new folder (git exp)
+open git bash in that folder
+git init
+ls -a
+git branch
+open folder-> new text-> example.txt-> add some text
+git status
+git add .
+git commit -m "Initial commit"
+git log --oneline
+git branch feature-branch
+git branch
+git checkout feature-branch
+git branch
+open example.txt->add line
+git status
+git add .
+git commit -m " "
+git log --oneline
+git checkout main
+git branch
+open ecample.txt
+modify spme tect
+git add .
+git commit -m " "
+git merge feature-branch
+git add .
+git commit -m " "
+git log --oneline
+git branch -d feature-branch
+git branch
