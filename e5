@@ -1,0 +1,30 @@
+Go to Desktop → Right-click → New → Folder → Name it git_tag_release.
+Open Git Bash.
+git init
+ls -a
+touch main.py
+echo "This is the first version of the file." > main.py
+git add main.py
+git commit -m "Initial commit"
+git log --oneline
+Create a repository on GitHub → Name: Git_Tag_Release → Public → Add README.md → Create Repository.
+git remote add origin https://github.com/Shreya281105/Git_Tag_Release.git
+git push -u origin main
+git pull origin main
+git tag v1.0
+git tag -a v1.2 -m "v1.2 Created"
+git tag
+git show v1.0
+git push origin v1.0
+git push --tags
+git tag v2.0
+git push origin v2.0
+git tag -l
+git tag -l "v1.*"
+git tag -d v1.0
+git push origin -d v1.0
+Open GitHub → Your repository → Click Releases → Draft a new release
+Select tag: v1.0 (or whichever tag you want to release)Add release title → Add notes (optional) Click Publish release
+git fetch --tags
+git tag
+git show v2.0
