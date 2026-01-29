@@ -1,0 +1,15 @@
+mkdir Git_lab1
+cd Git_lab1
+ls -a
+git config --global user.name "Shreya281105"
+git config --global user.email shreya.ag2811@gmail.com
+echo "This is my first git experiment" > README.txt
+git status
+git add .
+git status
+git commit -m "Initial commit"
+echo "Git tracks file changes" >> README.txt
+ git status
+git add .
+git commit -m "Updated README file"
+ git log
