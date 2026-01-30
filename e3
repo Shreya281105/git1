@@ -14,3 +14,13 @@ git clone url.git
 cd git-lab-demo
 ls
 git remote -v
+Make a small change in main.py.txt in cloned repo:
+echo "New line in cloned repo" >> main.py.txt
+git add main.py.txt
+git commit -m "Update from cloned repo"
+git push
+Check GitHub → the change should appear online.
+
+Pull changes back to your original repo (git_demo) to see synchronization:
+cd ~/Desktop/git_demo
+git pull origin master
