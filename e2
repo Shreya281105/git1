@@ -1,31 +1,79 @@
-create a new folder (git exp)
-open git bash in that folder
+# 1. Create folder and go inside
+mkdir git_exp
+cd git_exp
+
+# 2. Initialize git repository
 git init
+
+# 3. Check files
 ls -a
-git branch
-open folder-> new text-> example.txt-> add some text
+
+# 4. Create a file
+echo "This is the main branch file" > example.txt
+
+# 5. Check status
 git status
+
+# 6. Add and commit
 git add .
 git commit -m "Initial commit"
+
+# 7. View log
 git log --oneline
+
+# 8. Check current branch
+git branch
+
+# 9. Create new branch
 git branch feature-branch
+
+# 10. Check branches
 git branch
+
+# 11. Switch to feature branch
 git checkout feature-branch
+
+# 12. Confirm branch
 git branch
-open example.txt->add line
+
+# 13. Modify file in feature branch
+echo "Added line in feature branch" >> example.txt
+
+# 14. Check status
 git status
+
+# 15. Add and commit
 git add .
-git commit -m " "
+git commit -m "Updated in feature branch"
+
+# 16. View log
 git log --oneline
-git checkout main
+
+# 17. Switch back to main branch
+git checkout master
+
+# 18. Check branch
 git branch
-open ecample.txt
-modify spme tect
+
+# 19. Modify file in main branch
+echo "Added different line in main branch" >> example.txt
+
+# 20. Add and commit
 git add .
-git commit -m " "
+git commit -m "Updated in main branch"
+
+# 21. Merge feature branch
 git merge feature-branch
+
+# 22. (If conflict occurs, resolve manually, then:)
 git add .
-git commit -m " "
+git commit -m "Resolved merge conflict"
+
+# 23. View final log
 git log --oneline
+
+# 24. Delete feature branch
 git branch -d feature-branch
+
+# 25. Verify branches
 git branch
