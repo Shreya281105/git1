@@ -1,15 +1,45 @@
-mkdir Git_lab1
-cd Git_lab1
+# 1. Create a new folder
+mkdir git_lab2
+
+# 2. Move into the folder
+cd git_lab2
+
+# 3. Initialize Git repository (VERY IMPORTANT)
+git init
+
+# 4. Check contents (optional)
 ls -a
+
+# 5. Configure Git user (only once globally)
 git config --global user.name "Shreya281105"
 git config --global user.email shreya.ag2811@gmail.com
+
+# 6. Create a file
 echo "This is my first git experiment" > README.txt
+
+# 7. Check status
 git status
+
+# 8. Add file to staging area
 git add .
+
+# 9. Check status again
 git status
+
+# 10. Commit the file
 git commit -m "Initial commit"
+
+# 11. Modify the file
 echo "Git tracks file changes" >> README.txt
- git status
+
+# 12. Check status
+git status
+
+# 13. Add changes
 git add .
+
+# 14. Commit updated file
 git commit -m "Updated README file"
- git log
+
+# 15. View commit history
+git log
